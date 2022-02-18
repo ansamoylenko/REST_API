@@ -17,12 +17,7 @@ public class UserService {
 
     private final List<User> users;
 
-    public UserService() {
-        this.users = List.of(
-                new User("anton", "1234", "Антон", "Иванов"),
-                new User("ivan", "12345", "Сергей", "Петров")
-        );
-    }
+
 
     public Optional<User> getByLogin(@NonNull String login)
     {

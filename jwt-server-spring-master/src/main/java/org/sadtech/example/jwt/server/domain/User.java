@@ -31,15 +31,22 @@ public class User
     private String password;
     private String firstName;
     private String lastName;
+    private String patronymic;
+    private String dateOfBirth;
+    private String email;
+    private String number;
 
-    public User(String login, String password, String firstName, String lastName)
+    public User(String login, String password, String firstName, String lastName, String patronymic, String dateOfBirth, String email, String number)
     {
         this.login = login;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.patronymic = patronymic;
+        this.dateOfBirth = dateOfBirth;
+        this.email = email;
+        this.number = number;
     }
-
     public Set<Role> getRoles()
     {
 //        Set<Role> sr = new HashSet<>();
